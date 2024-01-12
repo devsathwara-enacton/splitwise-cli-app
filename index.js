@@ -12,9 +12,11 @@ let averageExpense = 0;
 program
   .name("split-wise")
   .version("1.0.0")
-  .description("Split your bills/expenses💰 among your friends")
-  .command("start", { isDefault: true })
-  .description("Start Split Wise")
+  .description("Split your bills/expenses💰 among your friends");
+
+program
+  .command("add")
+  .description("Add a friend and their expenses")
   .action(() => {
     clearConsole();
     displayTitle();
