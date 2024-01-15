@@ -141,7 +141,7 @@ function displayResults() {
 
           if (amountToTransfer > 0) {
             console.log(
-              `${friend.name} gives ${chalk.green(
+              `${friend.name} owes ${chalk.green(
                 amountToTransfer.toFixed(2)
               )} to ${owingFriend.name}`
             );
